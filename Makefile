@@ -24,7 +24,6 @@ clean_all: clean clean_climate clean_census clean_nass clean_noaa clean_soil
 
 ###### OUTPUTS
 readme: README.md
-	R -e "rmarkdown::render('$(<F)')"
 
 #Generate the paper
 presentation: output/presentation/presentation.html

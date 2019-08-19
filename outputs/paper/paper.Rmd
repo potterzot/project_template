@@ -1,6 +1,14 @@
 ---
-title:
-author:
-date:
-bibliography: ../library.bib
+title: "Untitled"
+author: ""
+date: "`r format(Sys.time(), '%B %d, %Y')"
+output: 
+  pdf_document: default
+  word_document:
+    reference_docx: ../templates/template.docx
+bibliography: "`r here::here('outputs/library.bib')`"
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
